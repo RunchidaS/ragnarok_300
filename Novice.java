@@ -5,10 +5,13 @@ public class Novice {
 	private int exp = 0;
 	private int hp = 500;
 	private int mana= 300;
-	private int level = 0;
+	private int level = 1;
 	private String name;
 	private int money = 1000;
 	Bag b1 =new Bag();
+
+	// Thief n1 = new Thief();
+	// Archer n2 = new Archer();
 
 	public void showAllItem() {
 		b1.showItem();
@@ -23,9 +26,12 @@ public class Novice {
 	public int yourMana(){
 		return mana;
 	}
+	public int yourLevel() {
+		return level;
+	}
 	public void attack() {
 	  	hp = hp-100;
-	  	exp = exp+100;
+	  	exp = exp+500;
 		money = money+100;
 		mana = mana-15;
 	}

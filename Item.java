@@ -5,6 +5,16 @@ import java.util.ArrayList;
 public class Item {
 private int count_potion = 10;
 
+public String Detail;   
+public int Damage;
+
+
+public Item() {
+    
+}
+
+
+
 ArrayList<String> weapon = new ArrayList<String>();
 ArrayList<String> potion = new ArrayList<String>();
 
@@ -22,6 +32,7 @@ ArrayList<String> potion = new ArrayList<String>();
         System.out.println("-Weapon-");
         for (int i=0; i<weapon.size();i++) {
             System.out.println(weapon.get(i));
+
         }
     }
     public void showPotion() {

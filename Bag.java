@@ -3,6 +3,10 @@ import java.util.Scanner;
 
 public class Bag {
     Item item = new Item();
+    Sword s1 = new Sword();
+    Bow s2 = new Bow();
+    Gun s3 = new Gun();
+  
     public void showItem() {
         item.showWeapon();
         item.showPotion();
